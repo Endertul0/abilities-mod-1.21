@@ -1,5 +1,7 @@
 package net.endertul.abilmod;
 
+import net.endertul.abilmod.block.ModBlocks;
+import net.endertul.abilmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ public class AbilitiesMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
