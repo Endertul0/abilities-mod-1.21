@@ -18,7 +18,8 @@ public class SoundRedeemableItem extends Item {
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
         World world = user.getWorld();
-        world.playSound(entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ENTITY_PLAYER_LEVELUP, SoundCategory.PLAYERS, 100F, 0.25F, false);
+        world.playSound(entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ENTITY_PLAYER_LEVELUP,
+                SoundCategory.PLAYERS, 100F, 0.25F, false);
         return super.useOnEntity(stack, user, entity, hand);
     }
 }
